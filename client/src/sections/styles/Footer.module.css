@@ -1,0 +1,82 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;    
+  background-color: #000;
+  color: #fff;
+  padding: 16px 50px 16px 20px;
+  font-family: 'Inter', sans-serif;
+  }
+  
+  .left, .right {
+    display: inline-block;
+  }
+  
+  .logo {
+      display: inline-flex;
+      height: 20px;
+  }
+  
+  .center {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 22px;
+  }
+  
+  .icon {
+    display: none;
+  }
+
+  .iconTG {
+    display: block;
+    height: 20px;
+    width: 21px;
+  }
+  
+  @media (min-width: 361px) and (max-width: 909px) {
+    .footer {  
+    padding: 20px 100px;
+    }
+
+    .center {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 910px) {
+    .footer {
+      padding: 20px 160px;
+    }
+    
+    .logo {
+      height: 30px;
+    }
+    
+    .left, .center, .right {
+      display: block;
+      align-items: center;
+    }
+    
+    .center {
+      font-size: 16px;
+    }
+    
+    .icon, .iconTG {
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+    }
+    
+    .right a {
+      margin-left: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .right a:hover .icon,
+    .right a:hover .iconTG {
+      transform: scale(1.2);
+    }
+  }

@@ -1,0 +1,53 @@
+.content {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+    align-items: center;
+}
+
+.imgDevice {
+    display: block;
+    margin: 0;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: F8F8FA;
+}
+
+.imgDextop {
+    display: none;
+}
+
+@media (min-width: 361px) and (max-width: 909px){
+.content {
+    background-image: url(../../images/yesLeft.png), url(../../images/yesRight.png);
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    }
+
+.imgDevice {
+    display: block;
+    margin: 0;
+    align-items: center;
+    padding: 24px 193px;
+    height: auto;
+    background-color: F8F8FA;
+}
+
+}
+
+@media (min-width: 910px){
+    .imgDevice {
+        display: none;
+    }
+
+    .imgDextop{
+        display: block;
+        margin: 0;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: F8F8FA;
+    }
+}

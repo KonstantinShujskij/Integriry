@@ -1,0 +1,15 @@
+{
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-console": "warn",
+      "prefer-const": "warn",
+      "quotes": ["error", "single"],
+      "jsx-quotes": ["error", "prefer-double"],
+      "indent": ["warn", 4],
+      "comma-dangle": ["warn", "never"],
+      "semi": ["error", "never"]
+    }
+}

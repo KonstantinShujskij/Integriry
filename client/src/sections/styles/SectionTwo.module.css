@@ -1,0 +1,126 @@
+.content {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    background-color: #F8F8F8;
+    align-items: center;
+}
+
+.whatIGetBox {
+    padding: 12px;
+}
+
+.header {
+    padding: 20px 28px 20px 28px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 63px;
+    letter-spacing: -1px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.imgDextop {
+    display: none;
+}
+
+.imgDevices {
+    display: block;
+    padding-left: 13px;
+    padding-right: 13px;
+    justify-self: center;
+    flex: 1;
+}
+
+.arrowImg {
+    display: block;
+    justify-self: center;
+    padding-top: 16px;
+}
+
+/* .container {
+  position: absolute;
+  padding: 20px 60px 40px 80px;
+  max-width: 700px;
+  max-height: ;
+  margin: auto;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.title {
+  padding-right: 12px;
+  font-family: 'Trebuchet MS';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 63px;
+  letter-spacing: -1px;
+  vertical-align: middle;
+  color:#000;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+} */
+
+@media (min-width: 361px) and (max-width: 909px) {
+.content {
+    background-image: url(../../images/Ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 360px;
+    background-position: left -18px top -10px;
+}
+
+.imgDevices {
+    display: none;
+}
+
+.imgLaptop {
+    display: block;
+    padding-left: 13px;
+    padding-right: 13px;
+    justify-self: center;
+    flex: 1;
+    opacity: 80%;
+}
+}
+
+@media (min-width: 910px) {
+.header {
+    padding: 0px 48px;
+    font-size: 50px;
+}
+
+.whatIGetBox {
+    padding: 0px 12px;
+}
+
+.imgDextop {
+    display: block;
+    margin: 12px 48px 0 0;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: #F8F8FA;
+    }
+
+.imgDevices, .imgLaptop, .arrowImg {
+    display: none;
+}
+}
+
+
