@@ -11,7 +11,7 @@ const TelegramButton = () => {
             rel="noopener noreferrer"
         >
             <img src={icon} alt="Telegram" 
-            className={styles.img}/>
+                className={styles.img}/>
         </a>
     )
 }

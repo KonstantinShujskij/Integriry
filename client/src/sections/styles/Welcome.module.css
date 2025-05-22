@@ -17,9 +17,7 @@
   .header {
     width: 100vw;
     display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 37px;
+    padding: 20px 20px 37px 20px;
   }
 
   
@@ -37,7 +35,7 @@
     /* box-sizing: border-box; */
  }
   
- .sideMenu {
+ /* .sideMenu {
     display: flex;
     justify-content: flex-end;
     padding: 20px 20px 0 20px;
@@ -46,7 +44,7 @@
  .sideMenuImg {
   display: block;
   height: 20px;
- }
+ } */
   
 .content {
   padding: 40px 0px 0px 0px;
@@ -109,25 +107,27 @@
   }
 
   @media (min-width: 361px) and (max-width: 909px) {
-  .welcomeSection {
-    padding-bottom: 80px;
+    .welcomeSection {
+      padding-bottom: 80px;
+    }
+
+    .header {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 0px;
+    }
+
+    .welcomeContent {
+      padding: 0px 0px 0px 20px;  
+      box-sizing: border-box;
+    }
   }
 
-  .header {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-  }
-
-   .welcomeContent {
-    padding: 0px 20px;
-    box-sizing: border-box;
- }
-
-    .imageBlock {
+  @media (min-width: 650px) and (max-width: 909px) {
+  .imageBlock {
     display: block;
     flex: 1;
     text-align: center;
@@ -138,6 +138,7 @@
     max-width: 100%;
     height: auto;
     padding-left: 60px;
+    right: 0px;
   }
   }
 

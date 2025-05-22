@@ -4,16 +4,12 @@ import HeaderImg from '../images/HeaderImg.png'
 import logoInt from '../images/logoInt.png'
 import MainPic from '../images/MainPic.png'
 import downdrop from '../images/dropdown.svg'
-import sideMenu from '../images/sidemenu.png'
 
 const Welcome = () => {
     return (
         <div className={styles.welcomeSection} id="welcome">
             <div className={styles.headerImgBox}>
                 <img src={HeaderImg} alt="Integrity Header" className={styles.headerImg} />
-            </div>
-            <div className={styles.sideMenu}>
-                <img src={sideMenu} alt="Side Menu" className={styles.sideMenuImg}/>
             </div>
             <div className={styles.header}>
                 <div>

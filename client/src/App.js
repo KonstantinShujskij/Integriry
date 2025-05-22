@@ -9,32 +9,36 @@ import Prices from './sections/Prices'
 import AskUsSecond from './sections/AskUsSecond'
 import Footer from './sections/Footer'
 import TelegramButton from './sections/TelegramButton'
+import MenuModal from './sections/MenuModal'
 
 function App() {
     return (
-        <div className="App">
-            <>
-                <Welcome />
-            </>
-            <>
-                <SectionTwo />
-            </>
-            <>
-                <SectionThree />
-            </>
-            <AskUs />
-            <>
-                <SectionFive />
-            </>
-            <>
-                <Prices />
-            </>
-            <AskUsSecond />
-            <TelegramButton />
-            <>
-                <Footer />
-            </>
-        </div>
+        <>
+            <MenuModal />
+            <div id="pageContent" className="App">
+                <>
+                    <Welcome />
+                </>
+                <>
+                    <SectionTwo />
+                </>
+                <>
+                    <SectionThree />
+                </>
+                <AskUs />
+                <>
+                    <SectionFive />
+                </>
+                <>
+                    <Prices />
+                </>
+                <AskUsSecond />
+                <TelegramButton />
+                <>
+                    <Footer />
+                </>
+            </div>
+        </>
     )
 }
 
