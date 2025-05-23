@@ -19,7 +19,7 @@ const AskUsSecond = () => {
         { name: '🇵🇱', code: '+48' },
         { name: '🇩🇪', code: '+49' },
         { name: '🇫🇷', code: '+33' },
-        { name: 'it', code: '+39' }
+        { name: '🇮🇹', code: '+39' }
     ]
 
     const [submitted, setSubmitted] = useState(false)
@@ -58,6 +58,7 @@ const AskUsSecond = () => {
                     <div className={styles.formGroup}>
                         <select
                             name="countryCode"
+                            className={styles.countryCode}
                             value={formData.countryCode}
                             onChange={handleChange}
                         >
@@ -70,6 +71,7 @@ const AskUsSecond = () => {
                         <input
                             name="phone"
                             type="tel"
+                            className={styles.telephoneInput}
                             placeholder="99 999-99-99"
                             value={formData.phone}
                             onChange={handleChange}
@@ -89,7 +91,7 @@ const AskUsSecond = () => {
                     {submitted && <p className={styles.success}>Дякуємо! Очікуйте дзвінка 📞</p>}
                 </form>
                 <p className={styles.notice}>
-                Залишаючи заявку, ви приймаєте умови <br />
+                    Залишаючи заявку, ви приймаєте умови <br />
                     <span className={styles.noticeUndln}>оферти та політики конфіденційності</span>
                 </p>
             </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import styles from './styles/AskUs.module.css'
 import sendTelegramMessage from '../api/telegram'
 
-
 const AskUs = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -14,7 +13,6 @@ const AskUs = () => {
     const countries = [
         { name: '🇺🇦', code: '+380' },
         { name: '🇲🇩', code: '+373' },
-        { name: '🇬🇪', code: '+995' },
         { name: '🇱🇻', code: '+371' },
         { name: '🇱🇹', code: '+370' },
         { name: '🇨🇿', code: '+420' },
@@ -60,6 +58,7 @@ const AskUs = () => {
                     <div className={styles.formGroup}>
                         <select
                             name="countryCode"
+                            className={styles.countryCode}
                             value={formData.countryCode}
                             onChange={handleChange}
                         >
@@ -72,6 +71,7 @@ const AskUs = () => {
                         <input
                             name="phone"
                             type="tel"
+                            className={styles.telephoneInput}
                             placeholder="99 999-99-99"
                             value={formData.phone}
                             onChange={handleChange}
