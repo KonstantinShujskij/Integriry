@@ -1,9 +1,7 @@
-import React from 'react'
 import styles from './styles/Welcome.module.css'
 import HeaderImg from '../images/HeaderImg.png'
 import logoInt from '../images/logoInt.png'
 import MainPic from '../images/MainPic.png'
-import downdrop from '../images/dropdown.svg'
 
 const Welcome = () => {
     return (
@@ -16,7 +14,7 @@ const Welcome = () => {
                     <img src={logoInt} alt="Integrity Logo" className={styles.logo} />
                 </div>
                 <div className={styles.nav}>
-                    <a href="#prices" className={styles.navLink}>Прайс </a> <img src={downdrop} className={styles.dropDown} alt="dropdown"/>
+                    <a href="#prices" className={styles.navLink}>Прайс </a>
                     <a href="#query" className={styles.navLink}>О курсах</a>
                 </div>
             </div>

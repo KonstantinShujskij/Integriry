@@ -1,6 +1,4 @@
-import React from 'react'
 import styles from './styles/SectionThree.module.css'
-import WhySo from '../images/WhySo.png'
 
 const SectionThree = () => {
     return (
@@ -12,7 +10,6 @@ const SectionThree = () => {
                         Сміливо завантажуй англійську у свою голову!</p>
                 </div>
             </div>
-            <img src={WhySo} alt="Why is it so" className={styles.imageDextop} />
         </div>
     )
 }
