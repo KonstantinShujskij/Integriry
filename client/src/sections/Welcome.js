@@ -3,8 +3,9 @@ import styles from './styles/Welcome.module.css'
 import HeaderImg from '../images/HeaderImg.png'
 import logoInt from '../images/logoInt.png'
 import MainPic from '../images/MainPic.png'
-import downdrop from '../images/dropdown.svg'
 import sideMenu from '../images/sidemenu.png'
+import icon from '../images/TGBtn.png'
+
 
 const Welcome = () => {
     return (
@@ -20,7 +21,8 @@ const Welcome = () => {
                     <img src={logoInt} alt="Integrity Logo" className={styles.logo} />
                 </div>
                 <div className={styles.nav}>
-                    <a href="#prices" className={styles.navLink}>Прайс </a> <img src={downdrop} className={styles.dropDown} alt="dropdown"/>
+                    <a href="#prices" className={styles.navLink}>Прайс </a> 
+                    {/* <img src={downdrop} className={styles.dropDown} alt="dropdown"/> */}
                     <a href="#query" className={styles.navLink}>О курсах</a>
                 </div>
             </div>
@@ -44,6 +46,10 @@ const Welcome = () => {
                     <a href="https://t.me/integrity_shcool_bot" target="_blank" rel="noopener noreferrer" className={styles.botButton}>Перейти до боту</a>
                 </div>
             </div>
+
+            <a href="https://t.me/integrity_shcool_bot" className={styles.telegramButton} target="_blank" rel="noopener">
+                <img src={icon} alt="Telegram" className={styles.img} />
+            </a>
         </div>
     )
 }
